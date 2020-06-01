@@ -1,0 +1,21 @@
+package player;
+
+/**
+ * Created by bjwei on 2020/4/25.
+ */
+public class BadPlayer extends Player {
+
+    public BadPlayer(int id, String name) {
+        super(id, name);
+    }
+
+    @Override
+    public boolean play(int partnerId, int round, int totalRound) {
+        return false;
+    }
+
+    @Override
+    public void feedback(int partnerId, boolean result) {
+
+    }
+}
